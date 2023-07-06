@@ -54,3 +54,32 @@ h2 {
 .active {
     border-bottom: 1px solid #3a3a3a;
 }
+
+/* chairs-top.jpg */
+
+#chairs-outer {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#chairs-top {
+    height: 600px;
+    width: 100%;
+    background: url('../images/chairs-top.jpg') no-repeat center center;
+    /* animates zoom effect on landing page*/
+    animation-name: chairs-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+/* creat the level of zoom for chairs-top.jpg */
+@keyframes chairs-zoom {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
